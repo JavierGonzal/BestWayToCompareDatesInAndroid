@@ -32,10 +32,11 @@ public class MainActivity extends AppCompatActivity {
     public List<String> getDataSet() {
         List<String> listDate = new ArrayList<>();
 
-        listDate.add("11/05/2017");
-        listDate.add("11/06/2017");
-        listDate.add("13/06/2017");
-        listDate.add("14/06/2017");
+        listDate.add("2017-04-01 14:03:12");
+        listDate.add("2017-05-01 14:03:12");
+        listDate.add("2017-06-13 01:03:12");
+        listDate.add("2017-06-13 22:03:12");
+        listDate.add("2017-06-14 01:03:12");
 
         return convertDate(listDate);
     }
