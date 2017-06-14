@@ -18,9 +18,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-//        RecyclerView.ItemDecoration itemDecoration =
-//                new DividerVerticalItemDecoration(this);
-//        recyclerView.addItemDecoration(itemDecoration);
+
+        //Divider decoration
+        RecyclerView.ItemDecoration itemDecoration =
+                new DividerVerticalItemDecoration(this);
+        recyclerView.addItemDecoration(itemDecoration);
+
         DateAdapter adapter = new DateAdapter(getDataSet());
         recyclerView.setAdapter(adapter);
 
