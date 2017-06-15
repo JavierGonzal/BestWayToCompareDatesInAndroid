@@ -10,12 +10,12 @@ import java.util.Date;
  * Created by javierg on 14/06/2017.
  */
 
-class DateUtil {
+public class DateUtil {
 
     public static int getDateDayOfMonth(Date date) {
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(date);
-        return cal.get(Calendar.DAY_OF_MONTH);
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        return calendar.get(Calendar.DAY_OF_MONTH);
     }
 
     public static int getCurrentDayOfMonth() {
@@ -54,17 +54,13 @@ class DateUtil {
 
         long millisSecond = convertToMillisSecond(date);
         long currencyMillisSecond = System.currentTimeMillis();
+
         if (currencyMillisSecond > millisSecond) {
             long diff = currencyMillisSecond - millisSecond;
             long day = 86400000L;
 
-            if (diff < day) {
-
-                if (getCurrentDayOfMonth() == getDateDayOfMonth(date)) {
-                    result = convertMillisSecondsToHourString(millisSecond);
-                } else {
-                    result = "yesterday";
-                }
+            if (diff < day && getCurrentDayOfMonth() == getDateDayOfMonth(date)) {
+                result = convertMillisSecondsToHourString(millisSecond);
 
             } else if (diff < (day * 2)) {
                 result = "yesterday";

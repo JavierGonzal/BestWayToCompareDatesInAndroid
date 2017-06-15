@@ -24,7 +24,24 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:design:25.3.1'
+    compile "com.android.support:percent:$rootProject.buildToolsVersion"
+    compile "com.android.support:design:$rootProject.buildToolsVersion"
+    compile "com.android.support:appcompat-v7:$rootProject.buildToolsVersion"
+    compile "com.android.support:support-annotations:$rootProject.buildToolsVersion"
+    androidTestCompile "com.android.support:support-annotations:$rootProject.buildToolsVersion"
+    compile "com.google.guava:guava:$rootProject.guavaVersion"
+
+    // Dependencies for local unit tests
+    testCompile "junit:junit:$rootProject.junitVersion"
+    testCompile "org.mockito:mockito-all:$rootProject.mockitoVersion"
+    testCompile "org.hamcrest:hamcrest-all:$rootProject.hamcrestVersion"
+
+    // Butter knife
+    compile "com.jakewharton:butterknife:$rootProject.butterknife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterknife"
+
+    // Espresso UI Testing
+    compile 'com.android.support:support-v4:25.3.1'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
 }
