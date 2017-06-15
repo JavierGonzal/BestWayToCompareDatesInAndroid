@@ -62,7 +62,7 @@ public class DateUtil {
             if (diff < day && getCurrentDayOfMonth() == getDateDayOfMonth(date)) {
                 result = convertMillisSecondsToHourString(millisSecond);
 
-            } else if (diff < (day * 2)) {
+            } else if (diff < (day * 2) && getCurrentDayOfMonth() -1 == getDateDayOfMonth(date)) {
                 result = "yesterday";
             } else {
                 result = convertMillisSecondsToDateString(millisSecond);
