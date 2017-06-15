@@ -5,10 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
-import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.ActivityUtils;
+import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.common.ActivityUtils;
 import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.R;
-import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.date.DateFragment;
-import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.date.DatePresenter;
 
 public class DateActivity extends AppCompatActivity {
     @Override

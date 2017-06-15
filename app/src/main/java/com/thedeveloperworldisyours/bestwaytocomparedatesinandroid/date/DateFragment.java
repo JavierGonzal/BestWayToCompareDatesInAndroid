@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.DividerVerticalItemDecoration;
+import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.common.DividerVerticalItemDecoration;
 import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.R;
 
 import java.util.List;

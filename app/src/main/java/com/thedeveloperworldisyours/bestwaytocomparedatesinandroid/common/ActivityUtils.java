@@ -1,4 +1,4 @@
-package com.thedeveloperworldisyours.bestwaytocomparedatesinandroid;
+package com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.common;
 
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;

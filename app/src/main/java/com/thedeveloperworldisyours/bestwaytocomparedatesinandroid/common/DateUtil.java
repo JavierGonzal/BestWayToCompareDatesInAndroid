@@ -1,4 +1,4 @@
-package com.thedeveloperworldisyours.bestwaytocomparedatesinandroid;
+package com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.common;
 
 import java.text.Format;
 import java.text.ParseException;

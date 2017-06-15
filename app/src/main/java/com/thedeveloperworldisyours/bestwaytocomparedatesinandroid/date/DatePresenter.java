@@ -2,7 +2,7 @@ package com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.date;
 
 import android.content.Context;
 
-import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.DateUtil;
+import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.common.DateUtil;
 import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.R;
 
 import java.util.ArrayList;
