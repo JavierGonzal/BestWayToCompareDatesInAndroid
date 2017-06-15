@@ -1,6 +1,9 @@
 package com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.date;
 
+import android.content.Context;
+
 import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.DateUtil;
+import com.thedeveloperworldisyours.bestwaytocomparedatesinandroid.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,10 +14,12 @@ import java.util.List;
 
 public class DatePresenter implements DateContract.Presenter {
 
+    private Context mContext;
     private DateContract.View mView;
 
-    public DatePresenter(DateContract.View mView) {
+    public DatePresenter(DateContract.View mView, Context context) {
         this.mView = mView;
+        this.mContext = context;
         mView.setPresenter(this);
     }
 
@@ -36,7 +41,7 @@ public class DatePresenter implements DateContract.Presenter {
 
         List<String> listResult = new ArrayList<>();
         for (int i = 0; i < listDate.size(); i++) {
-            listResult.add(i, DateUtil.compare(listDate.get(i)));
+            listResult.add(i, DateUtil.compare(listDate.get(i), mContext.getResources().getString(R.string.yesterday)));
         }
 
         return listResult;

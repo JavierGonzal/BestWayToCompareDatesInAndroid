@@ -29,6 +29,6 @@ public class DateActivity extends AppCompatActivity {
             ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), dateFragment, R.id.main_activity_content_frame);
         }
 
-        new DatePresenter(dateFragment);
+        new DatePresenter(dateFragment, this);
     }
 }

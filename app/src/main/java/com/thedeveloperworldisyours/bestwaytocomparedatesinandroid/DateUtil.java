@@ -39,7 +39,7 @@ public class DateUtil {
         return date.getTime();
     }
 
-    public static String compare(String stringData) {
+    public static String compare(String stringData, String yesterday) {
 
         String result = "";
 
@@ -63,7 +63,7 @@ public class DateUtil {
                 result = convertMillisSecondsToHourString(millisSecond);
 
             } else if (diff < (day * 2) && getCurrentDayOfMonth() -1 == getDateDayOfMonth(date)) {
-                result = "yesterday";
+                result = yesterday;
             } else {
                 result = convertMillisSecondsToDateString(millisSecond);
             }
