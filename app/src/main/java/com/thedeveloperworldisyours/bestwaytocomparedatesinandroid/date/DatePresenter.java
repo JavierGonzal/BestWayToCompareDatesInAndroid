@@ -14,12 +14,12 @@ import java.util.List;
 
 public class DatePresenter implements DateContract.Presenter {
 
-    private Context mContext;
+    String mString;
     private DateContract.View mView;
 
-    public DatePresenter(DateContract.View mView, Context context) {
+    public DatePresenter(DateContract.View mView, String string) {
         this.mView = mView;
-        this.mContext = context;
+        this.mString = string;
         mView.setPresenter(this);
     }
 
@@ -41,7 +41,7 @@ public class DatePresenter implements DateContract.Presenter {
 
         List<String> listResult = new ArrayList<>();
         for (int i = 0; i < listDate.size(); i++) {
-            listResult.add(i, DateUtil.compare(listDate.get(i), mContext.getResources().getString(R.string.yesterday)));
+            listResult.add(i, DateUtil.compare(listDate.get(i), mString));
         }
 
         return listResult;

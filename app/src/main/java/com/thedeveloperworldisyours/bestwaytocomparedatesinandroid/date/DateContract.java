@@ -10,10 +10,10 @@ import java.util.List;
 
 public class DateContract {
 
-    interface View extends BaseView<Presenter> {
+    public interface View extends BaseView<Presenter> {
         void showList(List<String> list);
     }
-    interface Presenter {
+    public interface Presenter {
         void getData();
         List<String> convertDate(List<String> listDate);
 

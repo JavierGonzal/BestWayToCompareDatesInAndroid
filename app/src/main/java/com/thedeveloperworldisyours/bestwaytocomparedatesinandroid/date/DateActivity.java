@@ -27,6 +27,6 @@ public class DateActivity extends AppCompatActivity {
             ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), dateFragment, R.id.main_activity_content_frame);
         }
 
-        new DatePresenter(dateFragment, this);
+        new DatePresenter(dateFragment, getResources().getString(R.string.yesterday));
     }
 }
