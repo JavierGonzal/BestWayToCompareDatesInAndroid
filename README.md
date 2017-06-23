@@ -1,5 +1,6 @@
 # BestWayToCompareDatesInAndroid
 Best Way To Compare Dates In Android
+[You'll find the supporting medium article for this project here!](http://thedeveloperworldisyours.com/android/best-way-compare-dates/#sthash.yiWLcls2.dpbs)
 
 Also visit my blog: **[The developer world is yours](http://thedeveloperworldisyours.com/)**
 
